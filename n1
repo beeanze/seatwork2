@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+
+    cout << "Enter a number (maximum of 4 digits): ";
+    cin >> num;
+
+    if (num <= 0) {
+        cout << "It is a non-positive number";
+    }
+    else if (num >= 1 && num <= 9999) {
+        cout << "It is a positive number";
+    }
+    else {
+        cout << "Maximum of 4 digits only!";
+    }
+
+    return 0;
+}
+
